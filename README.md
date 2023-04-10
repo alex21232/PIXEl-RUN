@@ -28,13 +28,11 @@ phaser es una extencion para juego.
 ![image](https://user-images.githubusercontent.com/110498995/231006677-f0f2cdca-0373-4bd7-956f-2139b32d13c3.png)
 
 Los assets que utilice para el personaje fueron los sprite de mario bros del primer juego de la saga
-como el:
+como el Mario,Goompa,Bullet
 
-## Mario
+El sonido que utilice fue el mismo de el primer juego de la saga
 
-## Goompa
 
-## Bullet
-![image](https://user-images.githubusercontent.com/110498995/231007208-e5d7561e-a022-4f65-80a1-a7f0152b394b.png)
+
 
 
