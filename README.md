@@ -22,3 +22,19 @@ Utilize el HTML para hacer los detalles como una pequeña parte de CSS, importar
 
 Phaser fue la extension que utilize para hacer el juego, me facilito mucha gran parte del juega ya que
 phaser es una extencion para juego.
+
+# CUALES FUERON LOS ASSETS QUE UTILICE PARA EL PROYECTO
+
+![image](https://user-images.githubusercontent.com/110498995/231006677-f0f2cdca-0373-4bd7-956f-2139b32d13c3.png)
+
+Los assets que utilice para el personaje fueron los sprite de mario bros del primer juego de la saga
+como el:
+
+## Mario
+
+## Goompa
+
+## Bullet
+![image](https://user-images.githubusercontent.com/110498995/231007208-e5d7561e-a022-4f65-80a1-a7f0152b394b.png)
+
+
