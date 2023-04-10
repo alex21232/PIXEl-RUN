@@ -21,7 +21,7 @@ export default class Menu extends Phaser.Scene{
         this.make.text(configText)
         // this.add.text(100,200, "Runner", { fill: "#ffffff", fontFamily:"font", fontSize: "96px",})
 
-        this.button = this.add.sprite(490,400,"start")
+        this.button = this.add.sprite(490,400,"start").setScale(0.4)
         this.button.setInteractive()  
         this.button.on("pointerdown", () =>{
             this.scene.launch("game")

@@ -8,11 +8,11 @@ const config = {
     witht: 710,
     height: 500,
     parent: "contenedor",
-    backgroundColor: "#0x2F2F2F",
+    backgroundColor: 0x2F2F2F,
     physics: {
         default: "arcade",
         arcade: {
-            debug: true,
+            debug: false,
 
         }
     },

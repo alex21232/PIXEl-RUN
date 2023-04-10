@@ -12,7 +12,8 @@ export default class Bootloader extends Phaser.Scene{
         this.load.image("start","../assets/START.png")
         this.load.spritesheet("DinoJump", "./assets/marioJump.png", {frameWidth:50, frameWidth:43})
         this.load.image("cactus", "../assets/goompa.png",{frameHeight:50, frameWidth:40})
-        this.load.spritesheet("bird", "../assets/Flappy.png",{frameHeight:17, frameWidth:20} )
+        this.load.image("bird", "../assets/bullet.png",{frameHeight:17, frameWidth:20} )
+        this.load.image("play again","../assets/play_again.png")
 
     }
 }

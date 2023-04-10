@@ -2,6 +2,7 @@ import Dino from "../GameObjects/dino.js"
 import Cactus from "../GameObjects/cactus.js"
 import Bird from "../GameObjects/bird.js"
 
+
 let gameOverAudio = document.getElementById("gameOver")
 let jumpAudio = document.getElementById("jump")
 export default class GameScene extends Phaser.Scene{
@@ -23,7 +24,7 @@ export default class GameScene extends Phaser.Scene{
 
         this.puntosInterval = setInterval(() => {this.puntos++; this.puntosText.setText(this.puntos)},130)        
 
-        this.dino = new Dino (this, 100, 390, "Dino", 0).setScale(1.9)
+        this.dino = new Dino (this, 100, 370, "Dino", 0).setScale(1.9)
         this.dino.setInteractive()
         this.jumping = false
 
@@ -31,11 +32,12 @@ export default class GameScene extends Phaser.Scene{
         this.bird = this.physics.add.group()
 
         this.cactusInterval = setInterval(() => {this.cactus.add(new Cactus (this, 1000, 387, "cactus").setScale(1.4))
-                            this.timeBird = setTimeout(() => {this.bird.add(new Bird (this, 1000, 300, "bird").setScale(3.0))}, 800)
-                            this.bird.playAnimation("fly")}
+                            this.timeBird = setTimeout(() => {this.bird.add(new Bird (this, 1000, 300, "bird"))}, 800)
+                            //this.bird.playAnimation("fly")
+                        }
         , Math.floor((Math.random()* (3000 - 2000 +1) ) + 2000))
         //animation
-        this.anims.create({
+        /*this.anims.create({
             key:"fly",
             frames:this.anims.generateFrameNumbers("bird", {
                 frames: [0,1,2]
@@ -44,7 +46,7 @@ export default class GameScene extends Phaser.Scene{
             frameRate: 10,
             duration: 0
 
-        })
+        })*/
 
         this.anims.create({
             key:"walk",
@@ -79,10 +81,11 @@ export default class GameScene extends Phaser.Scene{
 
         this.gameOver = this.physics.add.collider(this.dino, this.cactus.getChildren(), this.stop, null, this
         )
+        
         this.gameOver2 = this.physics.add.collider(this.dino, this.bird.getChildren(), this.stop, null, this
         )
         //movement
-        this.cursorSpace = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP)
+        this.cursorSpace = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE)
     }
     jump(){
         this.jumping = true
@@ -101,40 +104,38 @@ export default class GameScene extends Phaser.Scene{
     }
 
     update(){
-        if (this.cursorSpace.isDown && this.jumping ===true){
+        if (this.cursorSpace.isDown && this.jumping === true){
             this.dino.body.setVelocityY(-500)
             this.dino.anims.play("jump")
             jumpAudio.play()
             let timer = setTimeout(() => {
                 this.jumping = false
-                let timer2 = setTimeout(() => {this.dino.anims.play("walk")},700)
+                let timer2 = setTimeout(() => {this.dino.anims.play("walk")}, 600)
             }, 170);
         }
-        if (this.jumping === true) {
+        if (this.jumping === true){
             this.dino.on("pointerup", () => {
-                if (this.cursorSpace.isDown && this.jumping ===true){
-                    this.dino.body.setVelocityY(-600)
-                    this.dino.anims.play("jump")
-                    jumpAudio.play()
-                    let timer = setTimeout(() => {
-                        this.jumping = false
-                        let timer2 = setTimeout(() => {this.dino.anims.play("walk")},700)
-                    }, 170);
-                }
+                this.dino.body.setVelocityY(-700)
+                this.dino.anims.play("jump")
+                jumpAudio.play()
+                let timer = setTimeout(() => {
+                    this.jumping = false
+                    let timer2 = setTimeout(() => {this.dino.anims.play("walk")}, 600)
+            }, 170);
             })
         }
         switch(true){
-            case this.puntos > 100 && this.puntos < 300:
+            case this.puntos > 140 && this.puntos < 300:
                 this.cactus.setVelocityX(-500)
                 this.bird.setVelocityX(-500)
                 break;
 
-            case this.puntos > 300 && this.puntos < 500:
+            case this.puntos > 340 && this.puntos < 500:
                 this.cactus.setVelocityX(-700)
                 this.bird.setVelocityX(-700)
                 break;
 
-            case this.puntos > 500 && this.puntos < 700:
+            case this.puntos > 540 && this.puntos < 700:
                 this.cactus.setVelocityX(-900)
                 this.bird.setVelocityX(-900)
                 break;

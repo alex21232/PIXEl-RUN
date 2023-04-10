@@ -23,7 +23,7 @@ export default class GameOver extends Phaser.Scene{
         this.make.text(configText)
 
         const configTextPoints = {
-            x: 400,
+            x: 370,
             y: 300,
             text: "Your score was: ",
             style:{
@@ -35,11 +35,11 @@ export default class GameOver extends Phaser.Scene{
         }
         this.make.text(configTextPoints)
 
-        this.totalpoints = this.add.text(500, 300, "0",{fontFamily: "font", fontSize:20, })
+        this.totalpoints = this.add.text(600, 300, "0",{fontFamily: "font", fontSize:20, })
         this.totalpoints.setText(this.puntos)
 
-        this.button = this.add.sprite(490,400,"start")
-        this.button.setInteractive()  
+        this.button = this.add.sprite(490,400,"play again").setScale(0.4)
+        this.button.setInteractive()   
         this.button.on("pointerdown", () =>{
             this.scene.start("game")
             this.scene.stop()
