@@ -39,8 +39,3 @@ la creatividad que tuvimos en este proyecto fue mucha y me enseño muchas mas co
 necesarias.Gracias a mi profesor jesus que sabe mucho de codigo y nos recomendo los suficiente
 y mas para que este proyecto sea curioso y divertido la programacion puede parecer algo
 dificil pero con unas base y mucha creatividad todo aquel que le apacione lo puede lograr
-
-
-
-
-
