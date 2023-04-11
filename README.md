@@ -34,11 +34,11 @@ El sonido que utilice fue el mismo de el primer juego de la saga
 
 # COMO FUE MI EXPERIENCIA AL HACER ESTE JUEGO
 
-fue una experiencia muy agradable la programacion es un lugar tranquilo y de pura creatividad 
-la creatividad que tuvimos en este proyecto fue mucha y me enseño mucha mas cosas que son muy
-necesarias gracias a mi profesor jesus que sabe mucho de codigo y nos recomendo los suficiente
+fue una experiencia muy agradable la programacion es un lugar muy tranquilo y de pura creatividad, 
+la creatividad que tuvimos en este proyecto fue mucha y me enseño muchas mas cosas que son muy
+necesarias.Gracias a mi profesor jesus que sabe mucho de codigo y nos recomendo los suficiente
 y mas para que este proyecto sea curioso y divertido la programacion puede parecer algo
-difici pero con unas base y mucha creatividad todo aquel que le apacione lo puede hacer
+dificil pero con unas base y mucha creatividad todo aquel que le apacione lo puede lograr
 
 
 
