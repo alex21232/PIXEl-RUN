@@ -3,6 +3,9 @@ Mis primeros pasos en Phaser.js y en JavaScript con Adakademy.
 Hice una adaptacion del juego del dinosaurio de google chrome en JavaScript,HTML,Phaser
 utilizando los lenguaje y extensiones ya mencionadas para el salto, los enemigos,etc
 
+![image](https://user-images.githubusercontent.com/110498995/231577472-afc856d1-5d14-4d7b-9a6b-9522a0cc5308.png)
+
+
 
 # LEGUNAJES DE CODIGO
 
